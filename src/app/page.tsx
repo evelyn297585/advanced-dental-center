@@ -75,7 +75,7 @@ export default function LandingADC() {
         </Section>
       </header>
 
-      {/* HERO con video/foto de fondo */}
+      {/* HERO */}
       <div className="relative isolate">
         <div className="absolute inset-0 -z-10">
           <video
@@ -113,11 +113,11 @@ export default function LandingADC() {
         </Section>
       </div>
 
-      {/* LOGOS / SELLO DE CONFIANZA */}
+      {/* LOGOS */}
       <Section className="py-10">
         <p className="text-center text-sm uppercase tracking-[0.2em] text-white/50">Confiado por profesionales y pacientes exigentes</p>
         <div className="mt-6 grid grid-cols-2 md:grid-cols-5 gap-6 opacity-70">
-          {["Aligners","Implantes","Endodoncia","Ortodoncia","Cirugía"].map((t,i)=> (
+          {["Aligners", "Implantes", "Endodoncia", "Ortodoncia", "Cirugía"].map((t, i) => (
             <div key={i} className="h-14 rounded-2xl border border-white/10 grid place-content-center text-white/70">{t}</div>
           ))}
         </div>
@@ -142,7 +142,7 @@ export default function LandingADC() {
         </div>
       </Section>
 
-      {/* SERVICIOS DESTACADOS */}
+      {/* SERVICIOS */}
       <Section id="servicios" className="py-14">
         <h2 className="text-3xl sm:text-5xl font-black text-center">Servicios principales</h2>
         <p className="text-center text-white/70 mt-2">Centro de odontología en Tegucigalpa • Profesionales especializados en salud y estética • Alta tecnología en nuestros tratamientos</p>
@@ -152,22 +152,22 @@ export default function LandingADC() {
             {
               title: "Diseño de sonrisa y estética",
               img: "https://images.unsplash.com/photo-1598257006466-0e5d9f04fca7?q=80&w=1600&auto=format&fit=crop",
-              bullets: ["Carillas minimamente invasivas","Blanqueamiento seguro","Corrección de forma y proporción"],
+              bullets: ["Carillas minimamente invasivas", "Blanqueamiento seguro", "Corrección de forma y proporción"],
             },
             {
               title: "Implantes con guía 3D",
               img: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1600&auto=format&fit=crop",
-              bullets: ["Planificación CBCT","Guías quirúrgicas impresas","Carga inmediata cuando es viable"],
+              bullets: ["Planificación CBCT", "Guías quirúrgicas impresas", "Carga inmediata cuando es viable"],
             },
             {
               title: "Endodoncia microscópica",
               img: "https://images.unsplash.com/photo-1606811850350-3a4d3f2d81f6?q=80&w=1600&auto=format&fit=crop",
-              bullets: ["Más conservación de estructura","Menor molestia post-operatoria","Protocolos estandarizados"],
+              bullets: ["Más conservación de estructura", "Menor molestia post-operatoria", "Protocolos estandarizados"],
             },
             {
               title: "Ortodoncia digital",
               img: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1600&auto=format&fit=crop",
-              bullets: ["Alineadores y brackets de baja fricción","Escaneo y simulación","Controles predecibles"],
+              bullets: ["Alineadores y brackets de baja fricción", "Escaneo y simulación", "Controles predecibles"],
             },
           ].map((card, i) => (
             <article key={i} className="group relative overflow-hidden rounded-3xl bg-white/5 border border-white/10 shadow-2xl">
@@ -180,7 +180,7 @@ export default function LandingADC() {
                   ))}
                 </ul>
                 <a href="#agenda" className="mt-5 inline-flex items-center gap-2 rounded-xl bg-white text-black px-4 py-2 font-semibold">
-                  Ver opciones <ChevronRight className="h-4 w-4"/>
+                  Ver opciones <ChevronRight className="h-4 w-4" />
                 </a>
               </div>
             </article>
@@ -200,7 +200,7 @@ export default function LandingADC() {
             </div>
           </div>
           <div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1600&auto=format&fit=crop" alt="CBCT" className="w-full h-full object-cover"/>
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1600&auto=format&fit=crop" alt="CBCT" className="w-full h-full object-cover" />
           </div>
         </div>
       </Section>
@@ -209,9 +209,9 @@ export default function LandingADC() {
       <Section id="reseñas" className="py-16">
         <h2 className="text-3xl sm:text-5xl font-black text-center">Opiniones reales</h2>
         <div className="mt-8 grid md:grid-cols-3 gap-6">
-          {[1,2,3].map((i)=> (
+          {[1, 2, 3].map((i) => (
             <div key={i} className="rounded-3xl p-6 bg-white/5 border border-white/10">
-              <div className="flex items-center gap-1 text-cyan-300">{Array.from({length:5}).map((_,k)=> <Star key={k} className="h-4 w-4 fill-current" />)}</div>
+              <div className="flex items-center gap-1 text-cyan-300">{Array.from({ length: 5 }).map((_, k) => <Star key={k} className="h-4 w-4 fill-current" />)}</div>
               <p className="mt-3 text-white/80">“Atención impecable, diagnóstico claro y resultados que se notan. Recomiendo {BRAND.name} con los ojos cerrados.”</p>
               <p className="mt-3 text-white/60 text-sm">— Paciente verificado</p>
             </div>
@@ -219,7 +219,7 @@ export default function LandingADC() {
         </div>
       </Section>
 
-      {/* AGENDA / CONTACTO */}
+      {/* AGENDA */}
       <Section id="agenda" className="py-16">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
@@ -270,42 +270,4 @@ export default function LandingADC() {
           </div>
         </Section>
         <Section className="pb-10 text-xs text-white/40">© {new Date().getFullYear()} {BRAND.name}. Todos los derechos reservados.</Section>
-      </footer>
-    </div>
-  );
-}
-
-// Iconos minimalistas (para mantener el archivo autónomo)
-function GlobeIcon(){
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="opacity-90">
-      <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5"/>
-      <path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18" stroke="currentColor" strokeWidth="1.5"/>
-    </svg>
-  )
-}
-function ErgoIcon(){
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="opacity-90">
-      <rect x="3" y="10" width="7" height="4" rx="2" stroke="currentColor" strokeWidth="1.5"/>
-      <rect x="14" y="8" width="7" height="8" rx="2" stroke="currentColor" strokeWidth="1.5"/>
-      <path d="M6.5 10v-1.5C6.5 6.5 9 5 12 5c3 0 5.5 1.5 5.5 3.5V10" stroke="currentColor" strokeWidth="1.5"/>
-    </svg>
-  )
-}
-
-// --- Smoke tests ---
-export function runSmokeTests() {
-  const cases = [] as {name: string; pass: boolean; details?: string}[];
-  cases.push({ name: "Brand has phone", pass: typeof BRAND.phone === "string" && BRAND.phone.length > 0 });
-  cases.push({ name: "CTAButtons tel link compiles", pass: /^tel:/.test(`tel:${BRAND.phone.replace(/\s/g, "")}`) });
-  cases.push({ name: "Section renders children", pass: typeof Section === "function" });
-  return cases;
-}
-
-export function runExtraTests() {
-  const tests: {name: string; pass: boolean; details?: string}[] = [];
-  tests.push({ name: 'WhatsApp URL válida', pass: /^https:\/\/wa\.me\//.test(BRAND.whatsapp) || /wa\.me\//.test(BRAND.whatsapp) });
-  tests.push({ name: 'Sin Calendly', pass: true, details: 'El código no contiene Calendly ni auto-booking.' });
-  return tests;
-}
+      </footer
