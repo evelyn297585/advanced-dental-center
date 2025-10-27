@@ -11,15 +11,12 @@
   "dependencies": {
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest
-          "framer-motion": "^11.2.6",
-    "lucide-react": "^0.424.0""^0.
+    "react-dom": "latest",
+    "framer-motion": "^11.2.6",
+    "lulide-react": "^0.424.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-
-     24.0"
-    
     "postcss": "^8.4.21",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.3.0",
