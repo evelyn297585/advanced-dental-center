@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #fff;
-  color: #0A2540;
-}
+:root { color-scheme: light; }
+html, body { margin: 0; padding: 0; background: #fff; color: #0A2540; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+a { color: inherit; text-decoration: none; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
